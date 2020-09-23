@@ -23,3 +23,18 @@ Tìm hiểu + làm thử về các nội dung:
   * ES6: closure, arrow function, ... 
 * Bootstrap:
   * Bootstrap layout @Hiên bổ sung tiếp nhé
+
+---
+
+check thử firebase về backend vs UI kit frontend xem thế nào nhé
+
+---
+
+Website: đặt bàn ăn nhà hàng
+
+Gồm 4 màn hình chinhs:
+* "/" main: màn hình giới thiệu, quảng cáo về nhà hàng,...
+* "/foods" : màn hình chứa các món ăn
+  * các món ăn được xếp vào các thẻ (card), có hình ảnh và tên + giá. Thông tin chi tiết về món ăn hiển thị khi hover.
+* "/cart" : màn hình hiển thị các món ăn được đặt hàng, có số lượng (có thể thay đổi), có giá tiền xóa sửa blah blah
+* "/checkout" : màn hình thanh toán, có form để nhập các thông tin người dùng + ngày giờ số bàn số người blah blah. Có hiệu ứng khi đặt bàn thành công
