@@ -10,9 +10,9 @@
 
 ---
 
-Task được phân chia trong phần
+Task được phân chia trong phần Project - Task. Những issue cần làm sẽ được tự động add từ phần issue sang cột to-do. Làm cái nào thì click vào cái thẻ task đấy rồi assign bản thân vào rồi kéo sang cái in progress nhé.
 ![Screenshot from 2020-09-23 13-55-55](https://user-images.githubusercontent.com/47035692/93977753-2a570a80-fda5-11ea-8e28-97de3b820b3e.png)
-
+![Screenshot from 2020-09-23 14-05-45](https://user-images.githubusercontent.com/47035692/93978265-edd7de80-fda5-11ea-85a3-f0a37ee3912e.png)
 
 ---
 ## Dành riêng cho Sẻ
