@@ -8,6 +8,10 @@
     * Live Server
     * Prettier: Vào File - Preferences - Setting - tìm Format on save rồi tích vào để nó tự động format code khi save cho tiện. :))
 
+---
+
+Task được phân chia trong phần
+![Uploading Screenshot from 2020-09-23 13-55-55.png…]()
 
 ---
 ## Dành riêng cho Sẻ
