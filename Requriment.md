@@ -11,7 +11,8 @@
 ---
 
 Task được phân chia trong phần
-![Uploading Screenshot from 2020-09-23 13-55-55.png…]()
+![Screenshot from 2020-09-23 13-55-55](https://user-images.githubusercontent.com/47035692/93977753-2a570a80-fda5-11ea-8e28-97de3b820b3e.png)
+
 
 ---
 ## Dành riêng cho Sẻ
