@@ -1,3 +1,15 @@
+# Link tham khảo (xem để lấy cảm hứng :)) )
+form: https://bashooka.com/inspiration/50-beautiful-web-mobile-form-designs/
+
+Trang chọn món: http://demo.posthemes.com/pos_ecolife/en/
+
+https://preview.themeforest.net/item/flavoro-organic-food-opencart-store/full_screen_preview/27191094?_ga=2.89050331.1748377067.1602100279-1147923000.1601886818
+
+# Demo (Figma)
+Demo form: https://www.figma.com/file/4CUmelN0Q1c8CiUjYijJKU/Form?node-id=0%3A1
+
+Demo item: https://www.figma.com/file/f9VxDmUhSPuDFWfwKvi1nP/food-item
+
 # Yêu cầu
 
 - Sử dụng cú pháp camelCase
