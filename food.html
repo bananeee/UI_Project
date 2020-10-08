@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foods</title>
     <link rel="stylesheet" href="nav.css" />
+    <link rel="stylesheet" href="card.css" />
   </head>
   <body>
     <header>
@@ -15,8 +16,9 @@
         <ul class="nav-links">
           <li><a href="#">Home</a></li>
           <li><a href="#">Foods</a></li>
-          <li><a href="#">About</a>
+          <li><a href="#">About</a></li>
         </ul>
+
         <div class="burger">
           <div class="line1"></div>
           <div class="line2"></div>
@@ -25,7 +27,21 @@
       </nav>
     </header>
 
-    <main></main>
+    <main>
+      <div class="category"></div>
+
+      <div class="content">
+        <div class="card">
+          <img src="" alt="" />
+          <div class="card-text">
+            <div class="food-name"></div>
+            <div class="food-price"></div>
+            <div class="food-star"></div>
+            <button class="add-food"></button>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <script src="nav.js"></script>
   </body>
