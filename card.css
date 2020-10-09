@@ -3,9 +3,48 @@
 }
 
 .content {
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .card {
-    
+    max-width: 90vw;
+    border: 1px solid rgba(128, 128, 128, 0.74);
+    width: 200px;
+    height: 325px;
+    margin: 15px;
+    /* flex: 1; */
+    /* box-shadow: 0 10px 50px rgba(0, 0, 0, 0.19); */
+}
+
+/* .card:hover {
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.295);
+    transform: scale(1.05);
+    transition: all 0.2s ease
+} */
+
+.card-img {
+    height: 70%;
+    overflow: hidden;
+}
+
+.card-img img{
+    height: 100%;
+}
+
+.card-img img:hover{
+    transform: scale(1.2);
+    transition: all 0.4s ease-in-out;
+}
+
+.food-name {
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.food-price {
+    padding-left: 10px;
 }
