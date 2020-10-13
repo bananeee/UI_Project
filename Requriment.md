@@ -1,3 +1,6 @@
+# Mã màu chính:
+màu cam:  #e4401b
+
 # Link tham khảo (xem để lấy cảm hứng :)) )
 
 http://fishhouse.ancorathemes.com/
