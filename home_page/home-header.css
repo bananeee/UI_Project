@@ -75,14 +75,11 @@ body {
 }
 
 .stick-icon i:hover + .note{
-  /* display: block; */
   opacity: 1;
 }
 
-.logo {
-  color: #adadad;
-  font-size: 2.2rem;
-  font-weight: 600;
+.logo img{
+  width: 5rem;
 }
 
 .large-nav {
