@@ -30,7 +30,7 @@ nav {
     /* background-color: red; */
     width: 30%;
     justify-content: space-around;
-    z-index: 100;
+    /* z-index: 100; */
 }
 
 .nav-links li {
@@ -88,7 +88,7 @@ nav {
         justify-content: flex-start;
         align-items: center;
         transform: translateX(100%);
-        transition: transform 0.3s ease-in-out
+        transition: transform 0.3s ease-in-out;
     }
 
     .nav-links li {

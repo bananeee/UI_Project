@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 :root {
   --background-fade: rgba(0, 0, 0, 0.514);
   --border-grey: #ebebeb;
@@ -5,7 +8,9 @@
   --star-grey: #d0d0d0;
   --star-yellow: #fdd835;
   --btn-arrow: #232323;
-  --btn-main:  #e4401b;
+  --btn-main: #e4401b;
+  --text-bold: #4b4b4b;
+  --text-card-bold: #2b2b2b;
 }
 
 * {
@@ -15,7 +20,7 @@
 }
 
 body {
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
 }
 /* .category {
 } */
@@ -25,10 +30,29 @@ main {
   font-family: "Quicksand", sans-serif;
 }
 
+.category {
+  margin: 4rem 0;
+}
+
+h2 {
+  display: block;
+  content: "Menu";
+  text-transform: none;
+  letter-spacing: 0.2rem;
+  font-size: 4rem;
+  color: var(--text-bold);
+  margin-bottom: -0.3rem;
+  text-align: center;
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+}
+
 .content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  width: 85%;
+  margin: auto;
 }
 
 .modal {
@@ -40,16 +64,38 @@ main {
   height: 100%;
   overflow-y: auto;
   z-index: 2;
+  display: none;
 }
 
 .modal-inner {
   display: flex;
+  position: relative;
   background-color: #fff;
   margin: 5vh auto;
-  width: 70%;
+  width: 90%;
   max-width: 1025px;
   border-radius: 5px;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  transform: translateX(100%);
+  transition: transform 10s ease-in-out;
+}
+
+.modal-active {
+  transform: translateX(0);
+}
+
+button.close {
+  position: fixed;
+  right: 30px;
+  top: 25px;
+  font-size: 1.5rem;
+  background-color: transparent;
+  color: var(--text-bold);
+}
+
+button.close:hover {
+  opacity: 0.5;
 }
 
 .modal-img {
@@ -58,7 +104,7 @@ main {
 }
 
 .modal-img-container {
-  margin: 15%;
+  margin: 10%;
 }
 
 .modal-img-container img {
@@ -71,6 +117,7 @@ main {
 }
 
 .modal-title {
+  color: var(--text-bold);
   font-weight: 600;
   padding-bottom: 2rem;
 }
@@ -139,4 +186,27 @@ hr {
   height: 1px;
   background-color: var(--border-grey);
   margin: 3rem 0;
+}
+
+@media (max-width: 856px) {
+  .modal-inner {
+    flex-direction: column;
+  }
+
+  .modal-img-container {
+    margin: 0;
+  }
+
+  .modal-content {
+    margin-left: 3rem;
+  }
+
+  .modal-cart > form {
+    justify-content: space-around;
+  }
+
+  button.close {
+    right: 20px;
+    top: 15px;
+  }
 }
