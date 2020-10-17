@@ -7,38 +7,42 @@
     <script src="myscrip.js"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>Our Menu</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
-    </header>
-    <div class="main">
     <div class="container">
-        <span class="column1" id="date">Date</span>
-        <input type="date" class="column1" name="date" id="date">
-        <span class="column2">Time</span>
-        <input type="time" class="column2" name="time">
-        <span class="column3">Party</span>
-        <input type="text" class="column3" name="party">
+        <form action="">
+            <div class="head">
+                <div class="row1 date">
+                    <label for="date" >Date</label>
+                    <input type="text" name="date" id="date">
+                </div>
+                <div class="row1 time">
+                    <label for="time">Time</label>
+                    <input type="text" name="time" id="time">
+                </div>
+                <div class="row1 party">
+                    <label for="party">Party</label>
+                    <input type="text" name="party" id="party">
+                </div>
+            </div>
+            <div>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div>
+                <label for="phone">Phone</label>
+                <input type="tel" name="phone" id="phone">
+            </div>
+            <div>
+                <label for="mess">Add A Message</label>
+                <input type="text" name="mess" id="mess">
+            </div>
+            <div>
+                <button type="submit">Request Booking</button>
+            </div>
+        </form>
     </div>
-    <div>
-        <span class="" id="name">Name</span>
-        <input type="text" class="form" name="name" id="name">
-        <span class="">Email</span>
-        <input type="email" class="form" name="email">
-        <span class="">Phone</span>
-        <input type="tel" class="form" name="phone">
-        <span class="">Add A Message</span>
-        <input type="text" class="form" name="message">
-    </div>
-    <div class="container">
-        <button type="submit" class="column2">Reqest Booking</button>
-    </div>
-    </div>
-    <img src="assets/bg.jpg" class="img">
 </body>
 </html>
