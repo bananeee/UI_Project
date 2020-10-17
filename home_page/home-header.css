@@ -99,6 +99,13 @@ body {
   z-index: 5;
 }
 
+.scrolled{
+  background-color: #181514;
+  left: 0;
+  width: 100%;
+  transition: all 0.5s ;
+}
+
 .large-nav .logo {
   padding-left: 2.5rem;
   color: #e0dfdf;
