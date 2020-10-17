@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-.main {
+main {
   color: #797979;
   line-height: 1.5rem;
 }
 
-.main .part {
+main .part {
   margin-top: 5rem;
 }
 
@@ -30,7 +30,7 @@
 .introduce h2,
 .story h2,
 .mission h2,
-.special h2 {
+.special h2, .chef h2{
   color: #4b4b4b;
   font-size: 2.2rem;
   text-transform: uppercase;
@@ -45,12 +45,12 @@
   text-align: left;
 }
 
-.main .main-intro {
+main .main-intro {
   display: flex;
   margin-top: 3rem;
 }
 
-.main .main-intro .col {
+main .main-intro .col {
   flex: 1;
   margin-left: 5rem;
 }
@@ -67,7 +67,7 @@
 
 .main-intro .content p,
 .main-intro .col .row p,
-.main .story p,
+main .story p,
 .special p {
   font-size: 1.1rem;
   font-weight: 500;
@@ -93,7 +93,7 @@
   margin-bottom: 5rem;
 }
 
-.main .story span {
+main .story span {
   font-family: 'Dancing Script', cursive;
   margin-top: 0.6rem;
   font-size: 2.7rem;
@@ -103,38 +103,38 @@
   text-align: center;
 }
 
-.main .story p {
+main .story p {
   width: 70%;
   display: block;
   margin: 3rem auto;
 }
 
-.main .story .container {
+main .story .container {
   display: flex;
 }
-.main .story .col {
+main .story .col {
   flex: 1;
   overflow: hidden;
 }
-.main .story .col img {
+main .story .col img {
   width: 100%;
   max-height: 32rem;
   object-fit: cover;
 }
 
-.main .story .row p {
+main .story .row p {
   font-style: italic;
   margin-top: 0.5rem;
 }
 
-.main .story .row i {
+main .story .row i {
   font-size: 2rem;
   display: flex;
   justify-content: center;
   color: lightcoral;
 }
 
-.main .mission h2::after {
+main .mission h2::after {
   content: '\223E\269C\223E';
   display: block;
   font-size: 2rem;
@@ -257,6 +257,28 @@
   margin-top: 0.5rem;
 }
 
+.chef{
+  width: 90%;
+  margin: auto;
+}
+
+.chef .chef-board{
+  margin-top: 2rem;
+}
+
+.chef .chef-img{
+  display: flex;
+}
+
+.chef img{
+  flex: 1;
+  width: 80%;
+  /* max-height: 28rem; */
+  object-fit: cover;
+  display: block;
+  margin: auto;
+}
+
 @media (max-width: 576px) {
   .introduce {
     display: block;
@@ -273,13 +295,13 @@
   .introduce .text {
     margin-top: 1.2rem;
   }
-  .main .main-intro .col1 {
+  main .main-intro .col1 {
     flex: 2;
   }
-  .main .main-intro .col2 {
+  main .main-intro .col2 {
     flex: 1;
   }
-  .main .main-intro p,
+  main .main-intro p,
   .main-intro .col .row p {
     font-size: 1.2rem;
   }

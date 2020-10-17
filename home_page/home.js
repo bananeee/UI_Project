@@ -1,21 +1,17 @@
-// function myFunction(x) {
-//   if (x.matches) {
-//     // If media query matches
-//     document.getElementById('head').classList.remove('large-header');
-//     document.getElementById('head').classList.add('small-header');
-//     document.getElementById('nav').classList.add('nav-container');
-//     document.getElementById('nav').classList.remove('large-container');
-//   } else {
-//     document.getElementById('head').classList.add('large-header');
-//     document.getElementById('head').classList.remove('small-header');
-//     document.getElementById('nav').classList.remove('nav-container');
-//     document.getElementById('nav').classList.add('large-container');
-//   }
-// }
+function myFunction(x) {
+  if (x.matches) {
+    // If media query matches
+    document.getElementById('nav').classList.remove('large-nav');
+    document.getElementById('nav').classList.add('small-nav');
+  } else {
+    document.getElementById('nav').classList.add('large-nav');
+    document.getElementById('nav').classList.remove('small-nav');
+  }
+}
 
-// var x = window.matchMedia('(max-width: 800px)');
-// myFunction(x); // Call listener function at run time
-// x.addListener(myFunction); // Attach listener function on state changes
+var x = window.matchMedia('(max-width: 800px)');
+myFunction(x); // Call listener function at run time
+x.addListener(myFunction); // Attach listener function on state changes
 
 // var arr = [
 //   './images/slide image 1.jpg',
