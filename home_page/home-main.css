@@ -355,6 +355,7 @@ main .mission h2::after {
 
   .chef .chef-board {
     display: block;
+    margin-bottom: 0;
   }
 
   .chef .chef-board .card {
