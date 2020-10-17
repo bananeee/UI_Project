@@ -72,6 +72,7 @@ footer .copyright {
 @media (max-width: 500px) {
   footer .col-container .hommies {
     margin-left: 1rem;
+    margin-right: 1rem;
   }
   footer .col-container .visit-contact {
     flex: 1;
