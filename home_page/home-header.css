@@ -69,7 +69,7 @@ body {
   flex: 1;
 }
 
-.large-nav .nav-container .button{
+.large-nav .nav-container .button {
   display: none;
 }
 
@@ -88,7 +88,7 @@ body {
   font-size: 1rem;
 }
 
-.large-nav li a.active,
+.large-nav .active a,
 .large-nav li a:hover {
   background-color: #e4401b96;
   transition: 0.4s;
@@ -192,17 +192,6 @@ body {
   transform: none;
 }
 
-/* @media screen and (max-width: 899px) {
-  .large-nav {
-    display: none;
-  }
-}
-@media screen and (min-width: 900px) {
-  .small-nav {
-    display: none;
-  }
-} */
-
 .slider {
   overflow: hidden;
   background-color: rgba(17, 9, 8, 0.747);
@@ -213,14 +202,6 @@ body {
     rgba(71, 0, 18, 0.801) 0%,
     rgba(85, 34, 0, 0.59) 100%
   );
-  /*background: rgb(2, 0, 36);
-  background: linear-gradient(
-    0deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(88, 28, 0, 0.6786064767703957) 0%,
-    rgba(62, 0, 13, 0.7037037037037037) 0%,
-    rgba(108, 43, 0, 0.75) 100%
-  ); */
 }
 
 .slider figure {
