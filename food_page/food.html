@@ -8,9 +8,13 @@
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="nav.css" />
+    <link rel="stylesheet" href="food-main.css" />
     <link rel="stylesheet" href="card.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
   </head>
   <body>
     <header>
@@ -181,34 +185,46 @@
         <div class="modal-inner">
           <div class="modal-img">
             <div class="modal-img-container">
-              <img src="assets/menu-3.jpg" alt="" />
+              <img src="/assets/menu-3.jpg" alt="" />
             </div>
           </div>
           <div class="modal-content">
             <h1 class="modal-title">Trà sữa trân châu</h1>
             <div class="modal-star">
-              <i class="fas fa-star-of-life"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
+              <i class="modal-star-yellow fas fa-star"></i>
+              <i class="modal-star-yellow fas fa-star"></i>
+              <i class="modal-star-yellow fas fa-star"></i>
+              <i class="modal-star-yellow fas fa-star"></i>
+              <i class="modal-star-grey fas fa-star"></i>
             </div>
             <div class="modal-price">$9.00</div>
             <div class="modal-des">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+              <p>
+                an unknown printer took a galley of type aaset sheets containing
+                Lorem Ipsum passAldus PageMaker including versions of Lorem
+                Ipsum.
+              </p>
             </div>
+            <hr />
             <div class="modal-cart">
-              <input type="text" name="" id="" />
-              <button>Add to cart</button>
+              <form action="">
+                <div class="modal-cart-qty">
+                  <input type="text" name="" id="" />
+                  <span class="btn-group-arrow">
+                    <button class="btn-arrow">
+                      <i class="fas fa-chevron-up"></i>
+                    </button>
+                    <button class="btn-arrow">
+                      <i class="fas fa-chevron-down"></i>
+                    </button>
+                  </span>
+                </div>
+                <button class="btn-add">Add to cart</button>
+              </form>
             </div>
           </div>
         </div>
@@ -216,6 +232,5 @@
     </main>
 
     <script src="nav.js"></script>
-    
   </body>
 </html>
