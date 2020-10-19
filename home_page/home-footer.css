@@ -61,6 +61,9 @@ footer .follow {
 footer .follow i {
   padding: 1rem 2rem;
 }
+footer .follow i:hover {
+  color: white;
+}
 
 footer .copyright {
   padding-top: 2rem;
