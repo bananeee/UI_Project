@@ -1,6 +1,6 @@
 const modalAppear = () => {
     const main = document.querySelector('main')
-    const cards = document.querySelectorAll('.card')
+    const cards = document.querySelectorAll('.dish')
     const outerModal = document.querySelector('.modal')
     const innerModal = document.querySelector('.modal-inner')
     const closeButton = document.querySelector('.close')
