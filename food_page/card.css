@@ -1,10 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;500&display=swap');
+.page {
+  background-color: white;
+  width: 75%;
+  margin: auto;
+  position: relative;
+  top: -7rem;
+  padding: 3rem;
+  z-index: 0;
+  border: 1px solid #a5a5a562;
+}
+
+.page h2{
+  color: #e4401b;
+  font-family: 'Archivo Narrow', sans-serif;
+  /* letter-spacing: 0.05rem; */
+  font-size: 3rem;
+
+}
+
+.page .dish {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.page .dish1{
+  margin-top: 0;
+}
+.menu-container {
+  width: 80%;
+  margin: auto;
+}
+
+.dish img {
+  display: block;
+  width: 10rem;
+  height: 8rem;
+  margin-right: 1rem;
+  object-fit: cover;
+  border-radius: 0.2rem;
+  border: 1px solid #c4c4c43d;
+}
+.page .container {
+  display: flex;
+  position: relative;
+}
+
+.page .container h3 {
+  flex: 1;
+  display: inline;
+  font-size: 1.5rem;
+}
+
+.page .container h3 span {
+  background-color: white;
+}
+
+.page .container::after {
+  position: absolute;
+  content: '';
+  bottom: 0.4rem;
+  width: 100%;
+  border-top: 1px dashed #a5a4a4;
+  z-index: -1;
+}
+
+.page .container .price {
+  text-align: right;
+  color: #e4401b;
+}
+
+.page .container .name {
+  color: #4e4e4e;
+}
+
+.ingredients {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+}
 
 @media (max-width: 575px) {
   html {
     font-size: 10px;
-  }
-  .slider .slogan {
-    top: 18%;
   }
 }
 
@@ -12,17 +88,11 @@
   html {
     font-size: 10px;
   }
-  .slider .slogan {
-    top: 25%;
-  }
 }
 
 @media (min-width: 768px) {
   html {
     font-size: 13px;
-  }
-  .slider .slogan {
-    top: 35%;
   }
 }
 
@@ -37,6 +107,3 @@
     font-size: 16px;
   }
 }
-
-
-
