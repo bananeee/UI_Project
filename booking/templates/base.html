@@ -1,11 +1,11 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="home-header.css" />
-    <link rel="stylesheet" href="home-main.css" />
-    <link rel="stylesheet" href="home-footer.css" />
+    <link rel="stylesheet" href="{% static 'css/header.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}" />
     <link
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
@@ -43,7 +43,7 @@
       </div>
 
       <div id="nav" class="large-nav small-nav">
-        <div class="logo"><img src="./images/2.png" alt=""></div>
+        <div class="logo"><img src="{% static 'images/2.png' %}" alt=""></div>
         <div class="nav-container">
           <div class="button" tabindex="0">
             <span class="icon-bar"></span>
@@ -60,31 +60,17 @@
           </div>
         </div>
       </div>
-
-      <div class="slider">
-        <figure>
-          <img src="./images/slide image 1.jpg" />
-          <img src="./images/slide image 2.jpg" />
-          <img src="./images/slide image 3.jpg" />
-          <img src="./images/slide image 4.jpg" />
-          <img src="./images/slide image 5.jpg" />
-        </figure>
-        <div class="slogan">
-          Choose and taste to your place
-          <div class="sub-slogan">Eat right. Feel amazing.</div>
-          <a href="#" class="btn">Book a table</a>
-        </div>
-      </div>
     </header>
 
     <main>
-      
+
+
     </main>
 
     <footer id="footer">
       <div class="col-container">
         <div class="hommies">
-          <div class="logo"><img src="./images/2.png" alt=""></div>
+          <div class="logo"><img src="{% static 'images/2.png' %}" alt=""></div>
           <p>
             Choose and taste your place<br />
             Eat right. Feel amazing.
@@ -118,6 +104,6 @@
       <p class="copyright">&#169; 2020. All rights reserved.</p>
     </footer>
 
-    <script src="home.js"></script>
+    <script src="{% static 'js/home/home.js' %}"></script>
   </body>
 </html>

@@ -82,6 +82,10 @@ body {
   width: 5rem;
 }
 
+#nav {
+  transition: all 0.5s ;
+}
+
 .large-nav {
   width: 75%;
   height: 5.6rem;
@@ -100,7 +104,6 @@ body {
   background-color: #181514;
   left: 0;
   width: 100%;
-  transition: all 0.5s ;
 }
 
 .large-nav .logo {
