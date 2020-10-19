@@ -1,6 +1,8 @@
 .card {
   max-width: 90vw;
-  border: 1px solid rgba(128, 128, 128, 0.329);
+  border: 1px solid rgb(185, 185, 185);
+  /* border: 1px solid rgba(214, 214, 214, 0.329); */
+  /* background-color: rgba(247, 247, 247, 0.808); */
   width: 210px;
   height: 350px;
   margin: 15px;

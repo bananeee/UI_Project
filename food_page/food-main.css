@@ -31,20 +31,59 @@ main {
 }
 
 .category {
-  margin: 4rem 0;
+  position: relative;
+  width: 100%;
+  margin-bottom: 15vh;
+  text-align: center;
+}
+
+.arrow-down {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0; 
+  height: 0; 
+  border-left: 35px solid transparent;
+  border-right: 35px solid transparent;
+  border-top: 35px solid #111111;
+  /* border-top: 35px solid var(--btn-main); */
+  transform: translate(-50%, 100%);
+}
+
+.category .banner {
+  position: relative;
+  overflow: hidden;
+  background-image: url(/assets/bg3.jpg);
+  background-position: top;
+  height: 40vh;
+  min-width: 100%;
+}
+
+.banner::before {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.3;
+  z-index: 0;
 }
 
 h2 {
-  display: block;
+  position: absolute;
   content: "Menu";
-  text-transform: none;
+  top: 50%; /* position the top  edge of the element at the middle of the parent */
+  left: 50%; /* position the left edge of the element at the middle of the parent */
+  transform: translate(-50%, -75%);
   letter-spacing: 0.2rem;
-  font-size: 4rem;
+  font-size: 5.5rem;
   color: var(--text-bold);
-  margin-bottom: -0.3rem;
   text-align: center;
   font-family: "Great Vibes", cursive;
-  font-weight: 400;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-weight: 600;
+  color: white;
 }
 
 .content {
