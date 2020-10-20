@@ -22,21 +22,21 @@
     <header>
       <div class="stick-icon">
         <div class="icon">
-          <i class="fas fa-shopping-cart"></i>
+          <a href="{% url 'menu' %}"><i class="fas fa-shopping-cart"></i></a>
           <div class="note">
-            Shop
+            Menu
             <div class="tri"></div>
           </div>
         </div>
         <div class="icon">
-          <i class="fas fa-utensils"></i>
+          <a href="{% url 'form' %}"><i class="fas fa-utensils"></i></a>
           <div class="note">
             Booking
             <div class="tri"></div>
           </div>
         </div>
         <div class="icon">
-          <i class="fab fa-facebook-messenger"></i>
+          <a href="#"><i class="fab fa-facebook-messenger"></i></a>
           <div class="note">
             Chat
             <div class="tri"></div>
@@ -54,9 +54,9 @@
           </div>
           <div class="nav-content" tabindex="0">
             <ul>
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#">Our Menu</a></li>
-              <li><a href="#footer">Contact</a></li>
+              <li><a href="{% url 'home' %}">Home</a></li>
+              <li><a href="{% url 'menu' %}">Our Menu</a></li>
+              <li><a href="{% url 'form' %}">Booking</a></li>
               <li><a href="#footer">About Us</a></li>
             </ul>
           </div>

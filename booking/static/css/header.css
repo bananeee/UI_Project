@@ -14,6 +14,15 @@ body {
   font-family: 'Quicksand', sans-serif;
 }
 
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+.stick-icon a {
+  /* display: block; */
+}
+
 .stick-icon {
   position: fixed;
   right: 0;
@@ -70,11 +79,11 @@ body {
   transition: all 0.4s;
 }
 
-.stick-icon i:hover{
+.stick-icon a:hover i{
   width: 4rem;
 }
 
-.stick-icon i:hover + .note{
+.stick-icon a:hover + .note{
   opacity: 1;
 }
 
