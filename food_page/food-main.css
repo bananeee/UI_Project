@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;500&display=swap');
+:root {
+  --background-fade: rgba(0, 0, 0, 0.514);
+  --border-grey: #ebebeb;
+  --text-grey: #888;
+  --star-grey: #d0d0d0;
+  --star-yellow: #fdd835;
+  --btn-arrow: #232323;
+  --btn-main: #e4401b;
+  --text-bold: #4b4b4b;
+  --text-card-bold: #2b2b2b;
+}
+
+* {
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* overflow-y: hidden; */
+}
+/* .category {
+} */
+
+main {
+  position: relative;
+  font-family: "Quicksand", sans-serif;
+}
+
+.category {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.category .banner {
+  position: relative;
+  overflow: hidden;
+  background-image: url(./assets/bg3.jpg);
+  background-position: top;
+  height: 30rem;
+  min-width: 100%;
+}
+
+.banner::before {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.3;
+  z-index: 0;
+}
+
+.category h2 {
+  width: 100%;
+  height: 7.5rem;
+  position: absolute;
+  font-family: 'Archivo Narrow', sans-serif;
+  top: 45%; /* position the top  edge of the element at the middle of the parent */
+  left: 50%; /* position the left edge of the element at the middle of the parent */
+  transform: translate(-50%, -75%);
+  letter-spacing: 0.2rem;
+  font-size: 4rem;
+  color: var(--text-bold);
+  text-align: center;
+  font-weight: 600;
+  color: #dbdbdb;
+  text-transform: uppercase;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--background-fade);
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  z-index: 2;
+  display: none;
+}
+
+.modal-inner {
+  display: flex;
+  position: relative;
+  background-color: #fff;
+  margin: 5vh auto;
+  width: 90%;
+  max-width: 1025px;
+  border-radius: 5px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  transform: translateX(100%);
+  transition: transform 10s ease-in-out;
+}
+
+.modal-active {
+  transform: translateX(0);
+}
+
+button.close {
+  position: fixed;
+  right: 30px;
+  top: 25px;
+  font-size: 1.5rem;
+  background-color: transparent;
+  color: var(--text-bold);
+}
+
+button.close:hover {
+  opacity: 0.5;
+}
+
+.modal-img {
+  flex: 3;
+  align-self: center;
+}
+
+.modal-img-container {
+  margin: 10%;
+}
+
+.modal-img-container img {
+  width: 100%;
+}
+
+.modal-content {
+  flex: 3;
+  margin: 3rem 3rem 3rem 0;
+}
+
+.modal-title {
+  color: var(--text-bold);
+  font-weight: 600;
+  padding-bottom: 2rem;
+}
+
+.modal-star {
+  font-size: small;
+  color: var(--star-grey);
+  padding: 0.5rem 0;
+}
+
+.modal-star-yellow {
+  color: var(--star-yellow);
+}
+
+.modal-price {
+  font-size: 1.3em;
+  padding: 0.5rem 0;
+}
+
+.modal-des {
+  padding: 0.5rem 0;
+  color: var(--text-grey);
+}
+
+.modal-cart > form {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.modal-cart-qty {
+  white-space: unset;
+  display: flex;
+}
+
+.modal-cart-qty > input {
+  height: 48px;
+  width: 60px;
+  border: 1px solid var(--border-grey);
+}
+
+.btn-group-arrow {
+  display: flex;
+  flex-direction: column;
+  width: 25px;
+  margin-right: 1rem;
+}
+
+.btn-arrow {
+  border: 1px solid var(--border-grey);
+  background-color: #fff;
+  height: 24px;
+  font-size: x-small;
+  color: var(--btn-arrow);
+}
+
+.btn-add {
+  flex: 1;
+  max-width: 175px;
+  border-radius: 50px;
+  background-color: var(--btn-main);
+  color: white;
+  font-weight: bold;
+}
+
+hr {
+  height: 1px;
+  background-color: var(--border-grey);
+  margin: 3rem 0;
+}
+
+@media (max-width: 856px) {
+  .modal-inner {
+    flex-direction: column;
+  }
+
+  .modal-img-container {
+    margin: 0;
+  }
+
+  .modal-content {
+    margin-left: 3rem;
+  }
+
+  .modal-cart > form {
+    justify-content: space-around;
+  }
+
+  button.close {
+    right: 20px;
+    top: 15px;
+  }
+}
