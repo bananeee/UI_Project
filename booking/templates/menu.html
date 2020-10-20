@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block custom_header %}
+<link rel="stylesheet" href="{% static 'css/menu.css' %}" />
+<link
+  href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+  rel="stylesheet"
+/>
+<link
+  rel="stylesheet"
+  href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+/>
+<title>Menu</title>
+{% endblock custom_header %} {% block content %}
+<div class="dish">
+  <div class="food-img">
+    <img src="./assets/pexels-photo-357573.jpeg" alt="" />
+  </div>
+  <div class="description">
+    <div class="container">
+      <h3 class="name"><span>Meat</span></h3>
+      <h3 class="price"><span>$17.55</span></h3>
+    </div>
+    <p class="ingredients">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sint
+      necessitatibus nobis ratione!
+    </p>
+  </div>
+</div>
+{% endblock content %}

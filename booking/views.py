@@ -6,7 +6,7 @@ def index(request):
     return render(request, 'home.html')
 
 def menu(request):
-    return HttpResponse("menu")
+    return HttpResponse(request, 'menu.html')
 
 def form(request):
     return render(request, 'form.html')
