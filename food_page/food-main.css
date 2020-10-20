@@ -74,14 +74,6 @@ main {
   text-transform: uppercase;
 }
 
-.content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  width: 85%;
-  margin: auto;
-}
-
 .modal {
   position: fixed;
   top: 0;
