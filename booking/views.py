@@ -9,4 +9,4 @@ def menu(request):
     return HttpResponse("menu")
 
 def form(request):
-    return HttpResponse("form")
+    return render(request, 'form.html')

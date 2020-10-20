@@ -1,50 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="form.css" />
-    <title>Form</title>
-  </head>
-  <body>
-    <div class="bg-container">
-      <div class="form-container">
-        <img src="./images/left.jpg" alt="" />
-        <form action="">
-          <div class="top">
-            <div class="row">
-              <label for="date" id="check-date">Date</label>
-              <input type="text" id="date" placeholder="dd/mm/yy"/>
-            </div>
-            <div class="row">
-              <label for="time" id="check-time">Time</label>
-              <input type="text" id="time" />
-            </div>
-            <div class="row">
-              <label for="party">Party</label>
-              <select name="p8" id="party"></select>
-            </div>
-          </div>
-          <div class="row">
-            <label for="name" id="check-name">Name</label>
-            <input type="text" id="name" />
-          </div>
-          <div class="row">
-            <label for="email" id="check-email">Email</label>
-            <input type="email" id="email" />
-          </div>
-          <div class="row">
-            <label for="phone" id="check-phone">Phone</label>
-            <input type="text" id="phone" />
-          </div>
-          <div class="row">
-            <label for="mess">Add a mesage</label>
-            <textarea name="mess" id="mess"></textarea>
-          </div>
-          <button type="button" id="request">Request booking</button>
-        </form>
+{% extends 'base.html' %} {% load static %} {% block custom_header %}
+<link rel="stylesheet" href="{% static 'css/form/form.css' %}" />
+<title>Form</title>
+
+{% endblock custom_header %} {% block content %}
+<div class="bg-container">
+  <div class="form-container">
+    <img src="{% static 'images/left.jpg' %}" alt="" />
+    <form action="">
+      <div class="top">
+        <div class="row">
+          <label for="date" id="check-date">Date</label>
+          <input type="text" id="date" placeholder="dd/mm/yy" />
+        </div>
+        <div class="row">
+          <label for="time" id="check-time">Time</label>
+          <input type="text" id="time" />
+        </div>
+        <div class="row">
+          <label for="party">Party</label>
+          <select name="p8" id="party"></select>
+        </div>
       </div>
-    </div>
-    <script src="form.js"></script>
-  </body>
-</html>
+      <div class="row">
+        <label for="name" id="check-name">Name</label>
+        <input type="text" id="name" />
+      </div>
+      <div class="row">
+        <label for="email" id="check-email">Email</label>
+        <input type="email" id="email" />
+      </div>
+      <div class="row">
+        <label for="phone" id="check-phone">Phone</label>
+        <input type="text" id="phone" />
+      </div>
+      <div class="row">
+        <label for="mess">Add a mesage</label>
+        <textarea name="mess" id="mess"></textarea>
+      </div>
+      <button type="button" id="request">Request booking</button>
+    </form>
+  </div>
+</div>
+<script src="{% static 'js/form/form.js' %}"></script>
+{% endblock content %}
