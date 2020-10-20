@@ -1,136 +1,126 @@
+{% extends 'base.html' %} {% load static %} {% block custom_header %}
+<title>Menu</title>
+<link rel="stylesheet" href="{% static 'css/menu/menu-main.css' %}" />
+<link rel="stylesheet" href="{% static 'css/menu/card.css' %}" />
 
-    <title>Menu</title>
-    <link rel="stylesheet" href="food-main.css" />
-    <link rel="stylesheet" href="card.css" />
-
-
-
-      <div class="category">
-        <div class="banner">
-          <h2>Menu</h2>
-        </div>
+{% endblock custom_header %} {% block content %}
+<div class="category">
+  <div class="banner">
+    <h2>Menu</h2>
+  </div>
+</div>
+<div class="page">
+  <h2>appetizers</h2>
+  <div class="menu-container">
+    <div class="dish">
+      <div class="food-img">
+        <img src="{% static 'images/food-bruschette-1024x768.jpg' %}" alt="" />
       </div>
-      <div class="page">
-        <h2>appetizers</h2>
-        <div class="menu-container">
-          <div class="dish">
-            <div class="food-img">
-              <img src="./assets/food-bruschette-1024x768.jpg" alt="" />
-            </div>
-            <div class="description">
-              <div class="container">
-                <h3 class="name"><span>Meat</span></h3>
-                <h3 class="price"><span>$20.05</span></h3>
-              </div>
-              <p class="ingredients">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
-                sint necessitatibus nobis ratione!
-              </p>
-            </div>
-          </div>
-          <div class="dish">
-            <div class="food-img">
-              <img src="./assets/food-carpaccio-1024x768.jpg" alt="" />
-            </div>
-            <div class="description">
-              <div class="container">
-                <h3 class="name"><span>Meat</span></h3>
-                <h3 class="price"><span>$17.55</span></h3>
-              </div>
-              <p class="ingredients">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
-                sint necessitatibus nobis ratione!
-              </p>
-            </div>
-          </div>
-         
+      <div class="description">
+        <div class="container">
+          <h3 class="name"><span>Meat</span></h3>
+          <h3 class="price"><span>$20.05</span></h3>
         </div>
+        <p class="ingredients">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sint
+          necessitatibus nobis ratione!
+        </p>
       </div>
-
-      <div class="page break">
-        <h2>desserts</h2>
-        <div class="menu-container">
-          <div class="dish">
-            <div class="food-img">
-              <img src="./assets/pexels-photo-2280545.jpeg" alt="" />
-            </div>
-            <div class="description">
-              <div class="container">
-                <h3 class="name"><span>Meat</span></h3>
-                <h3 class="price"><span>$20.05</span></h3>
-              </div>
-              <p class="ingredients">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
-                sint necessitatibus nobis ratione!
-              </p>
-            </div>
-          </div>
-          
+    </div>
+    <div class="dish">
+      <div class="food-img">
+        <img src="{% static 'images/food-carpaccio-1024x768.jpg' %}" alt="" />
+      </div>
+      <div class="description">
+        <div class="container">
+          <h3 class="name"><span>Meat</span></h3>
+          <h3 class="price"><span>$17.55</span></h3>
         </div>
+        <p class="ingredients">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sint
+          necessitatibus nobis ratione!
+        </p>
       </div>
+    </div>
+  </div>
+</div>
 
-      <div class="modal">
-        <div class="modal-inner">
-          <button class="close">
-            <i class="fal fa-times"></i>
-          </button>
-          <div class="modal-img">
-            <div class="modal-img-container">
-              <img src="./assets/menu-3.jpg" alt="" />
-            </div>
-          </div>
-          <div class="modal-content">
-            <h1 class="modal-title">Trà sữa trân châu</h1>
-            <div class="modal-price">$9.00</div>
-            <div class="modal-des">
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-              </p>
-              <p>
-                an unknown printer took a galley of type aaset sheets containing
-                Lorem Ipsum passAldus PageMaker including versions of Lorem
-                Ipsum.
-              </p>
-              <p>
-                an unknown printer took a galley of type aaset sheets containing
-                Lorem Ipsum passAldus PageMaker including versions of Lorem
-                Ipsum.
-              </p>
-              <p>
-                an unknown printer took a galley of type aaset sheets containing
-                Lorem Ipsum passAldus PageMaker including versions of Lorem
-                Ipsum.
-              </p>
-              <p>
-                an unknown printer took a galley of type aaset sheets containing
-                Lorem Ipsum passAldus PageMaker including versions of Lorem
-                Ipsum.
-              </p>
-            </div>
-            <hr />
-            <div class="modal-cart">
-              <form action="">
-                <div class="modal-cart-qty">
-                  <input type="text" name="" id="" />
-                  <span class="btn-group-arrow">
-                    <button class="btn-arrow">
-                      <i class="fas fa-chevron-up"></i>
-                    </button>
-                    <button class="btn-arrow">
-                      <i class="fas fa-chevron-down"></i>
-                    </button>
-                  </span>
-                </div>
-                <button class="btn-add">Add to cart</button>
-              </form>
-            </div>
-          </div>
+<div class="page break">
+  <h2>desserts</h2>
+  <div class="menu-container">
+    <div class="dish">
+      <div class="food-img">
+        <img src="{% static 'images/pexels-photo-2280545.jpeg' %}" alt="" />
+      </div>
+      <div class="description">
+        <div class="container">
+          <h3 class="name"><span>Meat</span></h3>
+          <h3 class="price"><span>$20.05</span></h3>
         </div>
+        <p class="ingredients">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sint
+          necessitatibus nobis ratione!
+        </p>
       </div>
-    </main>
+    </div>
+  </div>
+</div>
 
-    <script src="nav.js"></script>
-    <script src="modal.js"></script>
-  </body>
-</html>
+<div class="modal">
+  <div class="modal-inner">
+    <button class="close">
+      <i class="fal fa-times"></i>
+    </button>
+    <div class="modal-img">
+      <div class="modal-img-container">
+        <img src="{% static 'images/menu-3.jpg' %}" alt="" />
+      </div>
+    </div>
+    <div class="modal-content">
+      <h1 class="modal-title">Trà sữa trân châu</h1>
+      <div class="modal-price">$9.00</div>
+      <div class="modal-des">
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry.
+        </p>
+        <p>
+          an unknown printer took a galley of type aaset sheets containing Lorem
+          Ipsum passAldus PageMaker including versions of Lorem Ipsum.
+        </p>
+        <p>
+          an unknown printer took a galley of type aaset sheets containing Lorem
+          Ipsum passAldus PageMaker including versions of Lorem Ipsum.
+        </p>
+        <p>
+          an unknown printer took a galley of type aaset sheets containing Lorem
+          Ipsum passAldus PageMaker including versions of Lorem Ipsum.
+        </p>
+        <p>
+          an unknown printer took a galley of type aaset sheets containing Lorem
+          Ipsum passAldus PageMaker including versions of Lorem Ipsum.
+        </p>
+      </div>
+      <hr />
+      <div class="modal-cart">
+        <form action="">
+          <div class="modal-cart-qty">
+            <input type="text" name="" id="" />
+            <span class="btn-group-arrow">
+              <button class="btn-arrow">
+                <i class="fas fa-chevron-up"></i>
+              </button>
+              <button class="btn-arrow">
+                <i class="fas fa-chevron-down"></i>
+              </button>
+            </span>
+          </div>
+          <button class="btn-add">Add to cart</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="{% static 'js/menu/modal.js' %}"></script>
+{% endblock content %}

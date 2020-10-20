@@ -20,15 +20,8 @@
   box-sizing: border-box;
 }
 
-body {
-  /* overflow-y: hidden; */
-}
-/* .category {
-} */
-
 main {
   position: relative;
-  font-family: "Quicksand", sans-serif;
 }
 
 .category {
@@ -40,7 +33,7 @@ main {
 .category .banner {
   position: relative;
   overflow: hidden;
-  background-image: url(./assets/bg3.jpg);
+  background-image: url('/static/images/bg3.jpg');
   background-position: top;
   height: 30rem;
   min-width: 100%;
