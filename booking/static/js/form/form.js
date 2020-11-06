@@ -1,4 +1,5 @@
 let selection = document.getElementById('party');
+let popup = document.querySelector('.popup-container')
 for (var i = 1; i <= 100; i++) {
   let option = document.createElement('option');
   let number = document.createTextNode('' + i);
@@ -17,13 +18,19 @@ for (let i = 0; i < checkArr.length; i++) {
 }
 
 document.getElementById('request').onclick = function () {
+  let fillAll = true;
   for (let i = 0; i < checkArr.length; i++) {
     if (document.getElementById(checkArr[i]).value === '') {
       noti[i].nodeValue = 'Please fill this field';
-      console.log('true');
+      fillAll = false;
     } else {
       noti[i].nodeValue = '';
-      console.log('false');
     }
+  }
+  if (fillAll === true) {
+    popup.style.display = 'block';
+    setTimeout(() => {
+      location.href="/"
+    }, 3500);
   }
 };
